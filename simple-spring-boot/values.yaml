@@ -4,6 +4,11 @@
 
 replicaCount: 1
 
+image_repository: quay.io/swinches
+image_name: spring-boot-helm-openshift-argocd
+image_version: 1.0.0
+
+
 image:
   repository: quay.io/swinches/spring-boot-helm-openshift-argocd
   pullPolicy: Always

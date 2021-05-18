@@ -35,8 +35,8 @@ spec:
               value: /opt/app-root/src/config/application.yml
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          image: "{{ .Values.image_repository }}/{{ .Values.image_name }}:{{ .Values.image_version }}"
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 8080

@@ -1,5 +1,8 @@
 # Some Helm Charts
 
+- simple-spring-boot : a standalone spring boot api - for `/cheese`
+- tutorial-crud-api : a mongodb and nodejs example api for `/api/tutorials`
+
 Publish a helm chart to a helm repo:
 
 ```
